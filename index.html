@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>Test</title>
+    <style>
+      html, body, div { margin: 0; padding: 0; }
+      #main { margin: 1em auto; padding: 0 15px; max-width: 630px; }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Request Download Permission Inside Click Event...</h1>
+      <p>
+        The “User Activation v2” feature in Beta v69 and Canary v70 appears
+        to break requesting permissions during click events i Chrome extensions:
+        <code>chrome://flags/#user-activation-v2</code>
+      </p>
+      <p><a id="request-perm" href="#">request download perm</a></p>
+      <p>Did it work?</p>
+      <p id="result">click link above to see...</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
